@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <title>Luke Combs Video Gallery</title>
+</head>
+
+<body>
+    <header class="clearfix">
+        <img id="logoimage" src="media/head.jpg">
+        <h2>Luke Combs Video Gallery</h2>
+    </header>
+
+    <nav id="nav_list">
+        <ul>
+            <li><a href="#vid1"> Dive (With Ed Sheeran) </a></li>
+            <li><a href="#vid2"> Forever After All </a></li>
+            <li><a href="#vid3"> Houston We Have a Problem </a></li>
+            <li><a href="#vid4"> Must Have Never Met You </a></li>
+            <li><a href="#vid5"> Beautiful Crazy </a></li>
+        </ul>
+    </nav>
+    <main>
+
+
+        <section>
+            <article id="vid1">
+                <h4>Dive (With Ed Sheeran)</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/StWygkPN92E" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid2">
+                <h4>Forever After All</h4>
+                <div class="videowrapper">
+                    <iframe width="912" height="380" src="https://www.youtube.com/embed/TDpOcp98b5k"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid3">
+                <h4>Houston We Have a Problem</h4>
+                <div class="videowrapper">
+                    <iframe width="790" height="336" src="https://www.youtube.com/embed/DAdTH5Kz6T0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid4">
+                <h4>Must Have Never Met You</h4>
+                <div class="videowrapper">
+                    <iframe width="790" height="331" src="https://www.youtube.com/embed/f_akFYKDA64"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid5">
+                <h4>Beautiful Crazy</h4>
+                <div class="videowrapper">
+                    <iframe width="790" height="334" src="https://www.youtube.com/embed/rItv9i6c7AY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+        <div>
+            <button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button>
+        </div>
+
+        <script>
+            // When the user scrolls down 800px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                    document.getElementById("cornerBtn").style.display = "block";
+                } else {
+                    document.getElementById("cornerBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Nathan Cyr Productions</p>
+    </footer>
+</body>
+
+</html>
